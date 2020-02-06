@@ -45,14 +45,14 @@
 
  // Retrieve an instance of Firebase Messaging so that it can handle background
  // messages.
- const messagingBgr = firebase.messaging();
+ const messaging = firebase.messaging();
  // [END initialize_firebase_in_sw]
 
 // If you would like to customize notifications that are received in the
 // background (Web app is closed or not in browser focus) then you should
 // implement this optional method.
 // [START background_handler]
-messagingBgr.setBackgroundMessageHandler(function(payload) {
+messaging.setBackgroundMessageHandler(function(payload) {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
   // Customize notification here
   const notificationTitle = 'Background Message Title';
