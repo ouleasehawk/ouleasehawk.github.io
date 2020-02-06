@@ -45,7 +45,7 @@ const messaging = firebase.messaging();
 
  // Retrieve an instance of Firebase Messaging so that it can handle background
  // messages.
- const messaging = firebase.messaging();
+ //const messaging = firebase.messaging();
  // [END initialize_firebase_in_sw]
 
 // If you would like to customize notifications that are received in the
