@@ -39,9 +39,23 @@
 
  // Initialize the Firebase app in the service worker by passing in the
  // messagingSenderId.
- firebase.initializeApp({
-   'messagingSenderId': '865676064009'
- });
+ //firebase.initializeApp({
+ //  'messagingSenderId': '865676064009'
+ //});
+
+ // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBO9S8-oOJLjCMoB73U4h4PcvgwXgnkW0A",
+    authDomain: "oleg-test-e652e.firebaseapp.com",
+    databaseURL: "https://oleg-test-e652e.firebaseio.com",
+    projectId: "oleg-test-e652e",
+    storageBucket: "oleg-test-e652e.appspot.com",
+    messagingSenderId: "865676064009",
+    appId: "1:865676064009:web:0f4c3f2c0584f85fb48fd8",
+    measurementId: "G-XWEMZ7PC7E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
  // Retrieve an instance of Firebase Messaging so that it can handle background
  // messages.
